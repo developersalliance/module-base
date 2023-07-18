@@ -1,0 +1,53 @@
+/**
+ * @author Developers-Alliance team
+ * @copyright Copyright (c) 2023 Developers-alliance (https://www.developers-alliance.com)
+ * @package Magento 2 Base
+ */
+
+// Variables
+@configTabLogoUrl: '@{baseDir}DevAll_Base/css/images/configtab/logo.png';
+@menuLogoUrl: '@{baseDir}DevAll_Base/css/images/menuitem/logo.png';
+@configTabLogoHeight: 38px;
+@menuLogoSize: 45px;
+
+@primaryColor: #007bff;
+@secondaryColor: #6c757d;
+@fontSizeSmall: 12px;
+@fontSizeMedium: 16px;
+@fontSizeLarge: 20px;
+
+// Config Tab Logo
+.admin__page-nav.devall-config-tab-class ._collapsible strong:before {
+    content: "";
+    background: url(@configTabLogoUrl) no-repeat scroll 0 0 transparent;
+    width: 100%;
+    height: @configTabLogoHeight;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.admin__page-nav.devall-config-tab-class ._collapsible strong {
+    font-size: 0;
+}
+
+// Menu Item Logo
+.admin__menu #menu-devall-base-base > a::before {
+    content: url(@menuLogoUrl);
+    height: @menuLogoSize;
+    width: @menuLogoSize;
+    margin: 0 auto;
+}
+
+.admin__menu #menu-devall-base-base > a span {
+    display: none;
+}
+
+.admin__page-title {
+    color: @primaryColor;
+    font-size: @fontSizeLarge;
+}
+
+.admin__footer {
+    color: @secondaryColor;
+    font-size: @fontSizeSmall;
+}
