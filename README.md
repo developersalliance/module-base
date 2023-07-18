@@ -1,4 +1,4 @@
-# DevAll_Core module
+# DevAll_Base module
 
 ## General Purpose
 
