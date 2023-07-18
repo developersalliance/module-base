@@ -9,7 +9,7 @@
         "magento/module-backend": "*"
     },
     "license": [
-        "Proprietary"
+        "MIT"
     ],
     "autoload": {
         "files": [
